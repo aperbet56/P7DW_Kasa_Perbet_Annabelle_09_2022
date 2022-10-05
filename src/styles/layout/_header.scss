@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: space-between;
+
+  & .header__logo {
+    margin: 22px 0;
+  }
+}
+
+header nav ul {
+  display: flex;
+
+  & li {
+    padding: 50px 0px;
+    margin-left: 35px;
+
+    & .link-active {
+      text-decoration: underline;
+    }
+  }
+}
