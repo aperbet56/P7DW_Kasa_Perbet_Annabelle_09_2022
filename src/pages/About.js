@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import AboutBanner from "../components/AboutBanner";
 import Collapse from "../components/Collapse";
-import Data from "../components/AccordionData";
+import Data from "../components/CollapseData";
 import Footer from "../components/Footer";
 
 const About = () => {
