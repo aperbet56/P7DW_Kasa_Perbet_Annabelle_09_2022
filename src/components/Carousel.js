@@ -19,26 +19,42 @@ const Carousel = (props) => {
     setCurrentIndex(newIndex);
   };
 
-  return (
-    <section className="carousel__container">
-      <img
-        src={arrowLeft}
-        alt="Flèche vers la gauche"
-        className="arrowLeft__img"
-        onClick={goToPrevious}
-      />
-      <img src={pictures[currentIndex]} alt="" className="carousel__img" />
-      <img
-        src={arrowRight}
-        alt="Flèche vers la droite"
-        className="arrowRight__img"
-        onClick={goToNext}
-      />
-      <span className="carousel__indicators">
-        {currentIndex + 1}/{pictures.length}
-      </span>
-    </section>
-  );
+  if (pictures.length === 1) {
+    return (
+      <section className="carousel__container">
+        <img
+          src={pictures[currentIndex]}
+          alt="Appartement"
+          className="carousel__img"
+        />
+      </section>
+    );
+  } else {
+    return (
+      <section className="carousel__container">
+        <img
+          src={arrowLeft}
+          alt="Flèche vers la gauche"
+          className="arrowLeft__img"
+          onClick={goToPrevious}
+        />
+        <img
+          src={pictures[currentIndex]}
+          alt="Appartement"
+          className="carousel__img"
+        />
+        <img
+          src={arrowRight}
+          alt="Flèche vers la droite"
+          className="arrowRight__img"
+          onClick={goToNext}
+        />
+        <span className="carousel__indicators">
+          {currentIndex + 1}/{pictures.length}
+        </span>
+      </section>
+    );
+  }
 };
 
 export default Carousel;
