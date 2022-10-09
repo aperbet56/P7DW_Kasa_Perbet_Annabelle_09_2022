@@ -183,6 +183,49 @@ footer span {
   border-radius: 5px;
 }
 
+.carousel__container {
+  max-width: 1240px;
+  height: 415px;
+  position: relative;
+}
+.carousel__container .carousel__img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 25px;
+}
+.carousel__container .arrowRight__img {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+  cursor: pointer;
+}
+.carousel__container .arrowLeft__img {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 24px;
+  cursor: pointer;
+}
+.carousel__container .carousel__indicators {
+  position: absolute;
+  z-index: 50;
+  top: 86.19%;
+  bottom: 6.01%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .error404 {
   display: flex;
   flex-direction: column;
