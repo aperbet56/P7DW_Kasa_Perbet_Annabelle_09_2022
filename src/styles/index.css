@@ -74,7 +74,7 @@ footer span {
   justify-content: center;
   align-items: center;
   margin: 32px 0 64px 0;
-  max-width: 100%;
+  max-width: 1240px;
 }
 .banner__img {
   max-width: 100%;
@@ -135,7 +135,7 @@ footer span {
   justify-content: center;
   align-items: center;
   margin: 32px 0 64px 0;
-  max-width: 100%;
+  max-width: 1240px;
 }
 .about__banner .about__banner__img {
   max-width: 100%;
@@ -226,6 +226,58 @@ footer span {
   font-weight: bold;
 }
 
+.tags__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.tags__list li {
+  background-color: #ff6060;
+  color: #ffffff;
+  text-align: center;
+  height: 25px;
+  margin-right: 16px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 22px 2px 22px;
+  border-radius: 10px;
+  width: auto;
+}
+
+.host__info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 22px;
+}
+.host__info__img {
+  width: 64px;
+  height: 64px;
+  margin-left: 10px;
+}
+.host__info__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.host__info__name {
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rating {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.rating img {
+  padding-left: 10px;
+}
+
 .error404 {
   display: flex;
   flex-direction: column;
@@ -251,4 +303,57 @@ footer span {
   font-size: 18px;
   font-weight: 500;
   text-decoration: underline;
+}
+
+.accomodation__info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin-top: 16px;
+}
+.accomodation__info h1 {
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.accomodation__info p {
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 28px;
+}
+
+.accomodation__collapse {
+  display: flex;
+  flex-direction: row;
+  max-width: 1240px;
+  justify-content: space-between;
+}
+.accomodation__collapse .accordion {
+  max-width: 582px;
+  width: 100%;
+  margin: 0;
+}
+.accomodation__collapse .accordion__btnWrap {
+  width: 100%;
+  height: 52px;
+}
+.accomodation__collapse .accordion__btnWrap h2,
+.accomodation__collapse .accordion__btnWrap p,
+.accomodation__collapse .accordion__btnWrap li {
+  font-size: 18px;
+  font-weight: bold;
+}
+.accomodation__collapse .collapse__content {
+  width: 582px;
+  height: 247px;
+  font-size: 18px;
+  padding: 38px 12px 53px 20px;
+  overflow: auto;
+}
+
+.collapse__content li {
+  margin-bottom: 8px;
 }/*# sourceMappingURL=index.css.map */
