@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import propTypes from "prop-types";
 import arrowUp from "../images/arrowUp.png";
 import arrowDown from "../images/arrowDown.png";
 
@@ -33,10 +32,10 @@ const Collapse = (props) => {
       {/* Si le titre est "Equipements", le contenu sera une liste sinon le contenu sera du texte
        */}
       {open === content ? (
-        title === "Équipements" ? (
+        title === "Equipements" ? (
           <ul className="collapse__content">
-            {content.map((item) => (
-              <li key={item}>{item}</li>
+            {content.map((item, index) => (
+              <li key={item + index}>{item}</li>
             ))}
           </ul>
         ) : (
@@ -45,11 +44,6 @@ const Collapse = (props) => {
       ) : null}
     </div>
   );
-};
-
-Collapse.propTypes = {
-  title: propTypes.string,
-  content: propTypes.string,
 };
 
 export default Collapse;
