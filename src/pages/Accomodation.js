@@ -3,6 +3,11 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../components/Header";
 import Carousel from "../components/Carousel";
+import Tags from "../components/Tags";
+import Host from "../components/Host";
+import Rating from "../components/Rating";
+import Collapse from "../components/Collapse";
+import Footer from "../components/Footer";
 import Error from "../pages/Error";
 
 const Accomodation = () => {
@@ -49,9 +54,23 @@ const Accomodation = () => {
       <Header />
       <main>
         <Carousel pictures={accomodation.pictures} />
-        <h1>{accomodation.title}</h1>
-        <p>{accomodation.location}</p>
+        <section className="accomodation__info">
+          <div className="accomodation__details">
+            <h1>{accomodation.title}</h1>
+            <p>{accomodation.location}</p>
+            <Tags tags={accomodation.tags} />
+          </div>
+          <div className="accomodation__notation">
+            <Host host={accomodation.host} />
+            <Rating rating={accomodation.rating} />
+          </div>
+        </section>
+        <section className="accomodation__collapse">
+          <Collapse title="Description" content={accomodation.description} />
+          <Collapse title="Equipements" content={accomodation.equipments} />
+        </section>
       </main>
+      <Footer />
     </div>
   ) : (
     <Error />
