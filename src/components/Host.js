@@ -6,11 +6,11 @@ const Host = (props) => {
   const lastName = props.host.name.split(" ")[1];
   return (
     <div className="host__info">
-      <p>
+      <span className="host__info__name">
         {firstName}
         <br />
         {lastName}
-      </p>
+      </span>
       <div className="host__info__img">
         <img src={props.host.picture} alt={`Avatar de ${props.name}`} />
       </div>
