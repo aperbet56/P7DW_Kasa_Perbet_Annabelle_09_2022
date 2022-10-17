@@ -31,6 +31,7 @@ const Accomodation = () => {
           const accomodation = logements.find((item) => item.id === id);
           console.log(accomodation);
           setAccomodation(accomodation);
+          window.scrollTo(0, 0);
         })
         .catch(function (error) {
           console.log(error);
@@ -45,35 +46,43 @@ const Accomodation = () => {
     return <p>Oups, il y a eu un problème.</p>;
   }
 
-  if (!accomodation) {
-    return <p>Veuillez patienter : le chargement en cours...</p>;
+  if (accomodation === undefined && !accomodation) {
+    return <Error />;
   }
 
-  return accomodation ? (
+  if (!accomodation) {
+    return (
+      <div className="loading-spinner">
+        <div className="loading-spinner__border"></div>
+      </div>
+    );
+  }
+
+  return (
     <div>
       <Header />
-      <main>
-        <Carousel pictures={accomodation.pictures} />
-        <section className="accomodation__info">
-          <div className="accomodation__details">
-            <h1>{accomodation.title}</h1>
-            <p>{accomodation.location}</p>
-            <Tags tags={accomodation.tags} />
-          </div>
-          <div className="accomodation__notation">
-            <Host host={accomodation.host} />
-            <Rating rating={accomodation.rating} />
-          </div>
-        </section>
-        <section className="accomodation__collapse">
-          <Collapse title="Description" content={accomodation.description} />
-          <Collapse title="Equipements" content={accomodation.equipments} />
-        </section>
-      </main>
+      {accomodation && (
+        <main>
+          <Carousel pictures={accomodation.pictures} />
+          <section className="accomodation__info">
+            <div className="accomodation__details">
+              <h1>{accomodation.title}</h1>
+              <p>{accomodation.location}</p>
+              <Tags tags={accomodation.tags} />
+            </div>
+            <div className="accomodation__notation">
+              <Host host={accomodation.host} />
+              <Rating rating={accomodation.rating} />
+            </div>
+          </section>
+          <section className="accomodation__collapse">
+            <Collapse title="Description" content={accomodation.description} />
+            <Collapse title="Equipements" content={accomodation.equipments} />
+          </section>
+        </main>
+      )}
       <Footer />
     </div>
-  ) : (
-    <Error />
   );
 };
 
