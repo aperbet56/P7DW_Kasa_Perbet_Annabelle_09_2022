@@ -3,6 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 30px;
 
   & li {
     background-color: $color-primary;
@@ -10,11 +11,34 @@
     text-align: center;
     height: 25px;
     margin-right: 16px;
-    margin-bottom: 30px;
     font-size: 14px;
-    font-weight: bold;
-    padding: 3px 22px 2px 22px;
+    font-weight: 500;
+    padding: 3px 25px 3px 25px;
     border-radius: 10px;
     width: auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .tags__list {
+    margin-bottom: 20px;
+
+    & li {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tags__list {
+    margin-bottom: 0;
+
+    & li {
+      font-size: 10px;
+      border-radius: 5px;
+      height: 18px;
+      margin-bottom: 12px;
+      margin-right: 10px;
+    }
   }
 }

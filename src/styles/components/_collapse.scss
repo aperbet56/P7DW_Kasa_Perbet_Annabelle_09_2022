@@ -23,13 +23,13 @@
 
     & h2 {
       font-size: 24px;
-      font-weight: bold;
+      font-weight: 500;
     }
   }
 }
 
 .collapse__content {
-  background-color: #f7f7f7; // #e5e5e5;
+  background-color: $color-tertiary;
   height: auto;
   color: $color-primary;
   font-size: 24px;
@@ -38,4 +38,29 @@
   margin-bottom: 16px;
   padding: 27px 27px 19px 18px;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  .accordion__btnWrap {
+    height: 30px;
+    margin-bottom: 20px;
+    & h2 {
+      font-size: 13px;
+    }
+    & div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    & img {
+      width: 12px;
+      height: 8px;
+    }
+  }
+
+  .collapse__content {
+    font-size: 12px;
+    margin-top: -20px;
+    padding: 23px 7px 52px 11px;
+  }
 }

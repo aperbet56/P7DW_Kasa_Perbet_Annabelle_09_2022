@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 22px;
+  margin-top: 5px;
 
   &__img {
     width: 64px;
@@ -20,5 +20,22 @@
 .host__info__name {
   color: $color-primary;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1400px) {
+  .host__info {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .host__info__img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .host__info__name {
+    font-size: 12px;
+  }
 }

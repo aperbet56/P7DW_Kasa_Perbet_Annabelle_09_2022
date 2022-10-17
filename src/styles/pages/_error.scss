@@ -3,12 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 
   &__title {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
-    font-size: 200px;
+    font-size: 288px;
     font-weight: 700;
     color: $color-primary;
   }
@@ -17,12 +18,41 @@
     font-weight: 500;
     font-size: 36px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 180px;
     color: $color-primary;
   }
   & .back-home__link {
     font-size: 18px;
     font-weight: 500;
     text-decoration: underline;
+    margin-bottom: 155px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .error404__title {
+    font-size: 200px;
+  }
+  .error404__text {
+    margin: 30px 10px 50px 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .error404__title {
+    margin-top: 25px;
+    font-size: 96px;
+    margin-bottom: 11px;
+  }
+
+  .error404__text {
+    font-size: 18px;
+    margin: 0 58px 130px 57px;
+    width: 260px;
+    height: 52px;
+    line-height: 26px;
+  }
+  .back-home__link {
+    font-size: 14px;
   }
 }

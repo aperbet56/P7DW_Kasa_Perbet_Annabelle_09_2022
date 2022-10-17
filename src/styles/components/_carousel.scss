@@ -39,6 +39,32 @@
     transform: translateX(-50%);
     color: $color-secondary;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carousel__container {
+    height: 255px;
+
+    & .carousel__img {
+      border-radius: 10px;
+    }
+
+    & .arrowRight__img {
+      right: 6px;
+      width: 24px;
+      height: 30px;
+    }
+
+    & .arrowLeft__img {
+      left: 6px;
+      width: 24px;
+      height: 30px;
+    }
+
+    & .carousel__indicators {
+      display: none;
+    }
   }
 }

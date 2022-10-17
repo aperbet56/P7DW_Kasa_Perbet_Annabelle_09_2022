@@ -11,8 +11,9 @@ body {
 
 header,
 main {
-  margin: auto;
-  width: 90%;
+  /*margin: auto;
+  width: 90%;*/
+  margin: 0 80px;
 }
 
 ul,
@@ -26,4 +27,32 @@ a {
   cursor: pointer;
   font-weight: 500;
   font-size: 24px;
+}
+
+@media screen and (min-width: 1400px) {
+  header,
+  main {
+    margin: 0 100px;
+  }
+}
+
+/*@media screen and (max-width: 1201px) {
+  header,
+  main {
+    margin: 0 70px;
+  }
+}*/
+
+@media screen and (max-width: 991px) {
+  header,
+  main {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header,
+  main {
+    margin: 0 20px;
+  }
 }
