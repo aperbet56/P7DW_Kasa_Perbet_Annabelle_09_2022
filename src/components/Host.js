@@ -1,5 +1,4 @@
 import React from "react";
-import propTypes from "prop-types";
 
 const Host = (props) => {
   const firstName = props.host.name.split(" ")[0];
@@ -16,11 +15,6 @@ const Host = (props) => {
       </div>
     </div>
   );
-};
-
-Host.propTypes = {
-  name: propTypes.string,
-  picture: propTypes.string,
 };
 
 export default Host;
