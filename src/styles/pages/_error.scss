@@ -29,6 +29,9 @@
   }
 }
 
+/********* RESPONSIVE *********/
+
+// Breakpoint tablette
 @media screen and (max-width: 991px) {
   .error404__title {
     font-size: 200px;
@@ -38,6 +41,7 @@
   }
 }
 
+// Breakpoint mobile
 @media screen and (max-width: 576px) {
   .error404__title {
     margin-top: 25px;

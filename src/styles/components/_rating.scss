@@ -8,12 +8,16 @@
   }
 }
 
+/******** RESPONSIVE ********/
+
+// Breakpoint écran large
 @media screen and (min-width: 1400px) {
   .rating {
     margin-top: 22px;
   }
 }
 
+// Breakpoint tablette
 @media screen and (max-width: 991px) {
   .rating {
     margin-top: 0;
@@ -25,6 +29,7 @@
   }
 }
 
+// Breakpoint mobile
 @media screen and (max-width: 576px) {
   .rating img {
     width: 15px;

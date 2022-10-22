@@ -23,12 +23,16 @@
   font-weight: 500;
 }
 
+/******** RESPONSIVE ********/
+
+// Breakpoint écran large
 @media screen and (min-width: 1400px) {
   .host__info {
     margin-top: 16px;
   }
 }
 
+// Breakpoint mobile
 @media screen and (max-width: 576px) {
   .host__info__img {
     width: 40px;

@@ -123,6 +123,7 @@ footer span {
   font-weight: 500;
 }
 
+/******** RESPONSIVE *********/
 @media screen and (max-width: 576px) {
   footer span {
     font-size: 12px;
@@ -148,6 +149,7 @@ footer span {
   font-weight: 500;
 }
 
+/******** RESPONSIVE ********/
 @media screen and (max-width: 991px) {
   .banner {
     max-width: 100%;
@@ -471,6 +473,7 @@ footer span {
   font-weight: 500;
 }
 
+/******** RESPONSIVE *********/
 @media screen and (max-width: 576px) {
   .carousel__container {
     height: 255px;
@@ -556,6 +559,7 @@ footer span {
   font-weight: 500;
 }
 
+/******** RESPONSIVE ********/
 @media screen and (min-width: 1400px) {
   .host__info {
     margin-top: 16px;
@@ -579,6 +583,7 @@ footer span {
   padding-left: 10px;
 }
 
+/******** RESPONSIVE ********/
 @media screen and (min-width: 1400px) {
   .rating {
     margin-top: 22px;
@@ -629,6 +634,7 @@ footer span {
   margin-bottom: 155px;
 }
 
+/********* RESPONSIVE *********/
 @media screen and (max-width: 991px) {
   .error404__title {
     font-size: 200px;

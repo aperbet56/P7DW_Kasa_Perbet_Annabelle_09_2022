@@ -18,6 +18,9 @@
   }
 }
 
+/******** RESPONSIVE ********/
+
+// Breakpoint tablette
 @media screen and (max-width: 991px) {
   .banner {
     max-width: 100%;
@@ -33,6 +36,7 @@
   }
 }
 
+// Breakpoint mobile
 @media screen and (max-width: 576px) {
   .banner {
     height: 111px;
