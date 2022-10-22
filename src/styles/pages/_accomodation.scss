@@ -1,3 +1,4 @@
+// Style du loading-spinner
 .loading-spinner {
   width: 100vw;
   height: 100vh;
@@ -84,6 +85,9 @@
   }
 }
 
+/******** RESPONSIVE *********/
+
+// Breakpoint écran large
 @media screen and (min-width: 1400px) {
   .accomodation__info h1 {
     font-size: 36px;
@@ -91,6 +95,7 @@
   }
 }
 
+// Breakpoint tablette
 @media screen and (max-width: 991px) {
   .accomodation__info {
     display: flex;
@@ -106,6 +111,7 @@
   }
 }
 
+// Breakpoint mobile
 @media screen and (max-width: 576px) {
   .accomodation__info {
     margin-top: 15px;
@@ -119,75 +125,6 @@
     & p {
       font-size: 14px;
       margin-bottom: 10px;
-    }
-  }
-}
-
-.accomodation__collapse {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 1240px;
-
-  & .accordion {
-    width: 47%;
-    margin: 0;
-
-    &__btnWrap {
-      width: 100%;
-      height: 52px;
-
-      & h2,
-      p,
-      li {
-        font-size: 18px;
-        font-weight: 500;
-      }
-    }
-  }
-
-  & .collapse__content {
-    width: 100%;
-    height: auto;
-    font-size: 18px;
-    padding: 38px 12px 53px 20px;
-    overflow: auto;
-  }
-}
-
-.collapse__content li {
-  margin-bottom: 8px;
-}
-
-.collapse__content li:last-child {
-  margin-bottom: 0;
-}
-
-@media screen and (max-width: 991px) {
-  .accomodation__collapse {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    & .accordion {
-      width: 100%;
-    }
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .accomodation__collapse {
-    .accordion__btnWrap {
-      height: 30px;
-
-      & h2 {
-        font-size: 13px;
-      }
-    }
-
-    & .collapse__content {
-      font-size: 12px;
-      padding: 23px 7px 4px 12px;
     }
   }
 }

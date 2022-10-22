@@ -13,12 +13,15 @@
     margin-right: 16px;
     font-size: 14px;
     font-weight: 500;
-    padding: 3px 25px 3px 25px;
+    padding: 3px 25px 2px 25px;
     border-radius: 10px;
     width: auto;
   }
 }
 
+/******* RESPONSIVE *******/
+
+// Breakpoint tablette
 @media screen and (max-width: 991px) {
   .tags__list {
     margin-bottom: 20px;
@@ -29,6 +32,7 @@
   }
 }
 
+// Breakpoint mobile
 @media screen and (max-width: 576px) {
   .tags__list {
     margin-bottom: 0;

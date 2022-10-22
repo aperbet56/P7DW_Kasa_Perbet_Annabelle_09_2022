@@ -21,6 +21,9 @@ header nav ul {
   }
 }
 
+/********* RESPONSIVE ***********/
+
+// Breakpoint tablette
 @media screen and (max-width: 991px) {
   header {
     margin-right: 40px;
@@ -39,9 +42,11 @@ header nav ul {
   }
 }
 
+// Breakpoint mobile
 @media screen and (max-width: 576px) {
   header {
-    margin: 20px 20px 0 20px;
+    margin: 0px 20px 0 20px;
+    height: 95px;
 
     & .header__logo {
       width: 122px;

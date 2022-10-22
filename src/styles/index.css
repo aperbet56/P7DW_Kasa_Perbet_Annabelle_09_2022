@@ -12,8 +12,6 @@ body {
 
 header,
 main {
-  /*margin: auto;
-  width: 90%;*/
   margin: 0 80px;
 }
 
@@ -30,18 +28,13 @@ a {
   font-size: 24px;
 }
 
+/******* RESPONSIVE ************/
 @media screen and (min-width: 1400px) {
   header,
 main {
     margin: 0 100px;
   }
 }
-/*@media screen and (max-width: 1201px) {
-  header,
-  main {
-    margin: 0 70px;
-  }
-}*/
 @media screen and (max-width: 991px) {
   header,
 main {
@@ -74,6 +67,7 @@ header nav ul li .link-active {
   text-decoration: underline;
 }
 
+/********* RESPONSIVE ***********/
 @media screen and (max-width: 991px) {
   header {
     margin-right: 40px;
@@ -91,7 +85,8 @@ header nav ul li .link-active {
 }
 @media screen and (max-width: 576px) {
   header {
-    margin: 20px 20px 0 20px;
+    margin: 0px 20px 0 20px;
+    height: 95px;
   }
   header .header__logo {
     width: 122px;
@@ -180,10 +175,6 @@ footer span {
   }
 }
 .accomodations {
-  /*display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
@@ -199,15 +190,20 @@ footer span {
   margin: 20px;
   transition: transform 0.3s ease-in-out;
 }
+.accomodations figure::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
 .accomodations figure:hover {
   transform: scale(1.02);
 }
 .accomodations figure img {
-  /*background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 0.5) 100%
-  );*/
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -226,10 +222,25 @@ footer span {
   color: #ffffff;
 }
 
+/******** RESPONSIVE **********/
 @media screen and (max-width: 991px) {
   .accomodations {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
+    background-color: #ffffff;
+    padding: 0;
+    width: 100%;
+  }
+  .accomodations figure {
+    max-width: 100%;
+    height: 400px;
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .accomodations figure {
+    max-width: 100%;
+    height: 255px;
+    margin: 20px 0;
   }
 }
 .about__banner {
@@ -239,19 +250,30 @@ footer span {
   align-items: center;
   margin: 32px 0 64px 0;
   max-width: 1240px;
+  height: 223px;
 }
-.about__banner .about__banner__img {
-  max-width: 100%;
-  border-radius: 25px;
+.about__banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/aboutBanner.png);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
   filter: brightness(70%);
+  border-radius: 25px;
 }
 
+/******** RESPONSIVE **********/
 @media screen and (max-width: 991px) {
   .about__banner {
     max-width: 100%;
     height: 200px;
   }
-  .about__banner__img {
+  .about__banner::before {
     height: 100%;
   }
 }
@@ -261,20 +283,30 @@ footer span {
     margin-top: 0;
     margin-bottom: 20px;
   }
-  .about__banner__img {
+  .about__banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url(../../images/aboutBannerMobile.png);
-    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: none;
+    background-size: cover;
+    filter: brightness(70%);
     border-radius: 10px;
   }
 }
+/******* Style collapse page a propos *********/
+.about__collapse {
+  margin-bottom: 84px;
+  max-width: 1240px;
+}
+
 .accordion {
-  /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;*/
   display: block;
+  width: 82.5%;
   max-width: 1023px;
   margin: auto;
   background-color: #ffffff;
@@ -309,7 +341,11 @@ footer span {
   border-radius: 5px;
 }
 
+/********** RESPONSIVE ***********/
 @media screen and (max-width: 576px) {
+  .accordion {
+    width: 100%;
+  }
   .accordion__btnWrap {
     height: 30px;
     margin-bottom: 20px;
@@ -330,6 +366,66 @@ footer span {
     font-size: 12px;
     margin-top: -20px;
     padding: 23px 7px 52px 11px;
+  }
+}
+/******** Style collapse page accomodation ***********/
+.accomodation__collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1240px;
+}
+.accomodation__collapse .accordion {
+  width: 47%;
+  margin: 0;
+}
+.accomodation__collapse .accordion__btnWrap {
+  width: 100%;
+  height: 52px;
+}
+.accomodation__collapse .accordion__btnWrap h2,
+.accomodation__collapse .accordion__btnWrap p,
+.accomodation__collapse .accordion__btnWrap li {
+  font-size: 18px;
+  font-weight: 500;
+}
+.accomodation__collapse .collapse__content {
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  padding: 38px 12px 53px 20px;
+  overflow: auto;
+}
+
+.collapse__content li {
+  margin-bottom: 8px;
+}
+
+.collapse__content li:last-child {
+  margin-bottom: 0;
+}
+
+/*********** RESPONSIVE **********/
+@media screen and (max-width: 991px) {
+  .accomodation__collapse {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .accomodation__collapse .accordion {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .accomodation__collapse .accordion__btnWrap {
+    height: 30px;
+  }
+  .accomodation__collapse .accordion__btnWrap h2 {
+    font-size: 13px;
+  }
+  .accomodation__collapse .collapse__content {
+    font-size: 12px;
+    padding: 23px 7px 4px 12px;
   }
 }
 .carousel__container {
@@ -411,11 +507,12 @@ footer span {
   margin-right: 16px;
   font-size: 14px;
   font-weight: 500;
-  padding: 3px 25px 3px 25px;
+  padding: 3px 25px 2px 25px;
   border-radius: 10px;
   width: auto;
 }
 
+/******* RESPONSIVE *******/
 @media screen and (max-width: 991px) {
   .tags__list {
     margin-bottom: 20px;
@@ -670,6 +767,7 @@ footer span {
   margin-bottom: 20px;
 }
 
+/******** RESPONSIVE *********/
 @media screen and (min-width: 1400px) {
   .accomodation__info h1 {
     font-size: 36px;
@@ -701,63 +799,5 @@ footer span {
   .accomodation__info p {
     font-size: 14px;
     margin-bottom: 10px;
-  }
-}
-.accomodation__collapse {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 1240px;
-}
-.accomodation__collapse .accordion {
-  width: 47%;
-  margin: 0;
-}
-.accomodation__collapse .accordion__btnWrap {
-  width: 100%;
-  height: 52px;
-}
-.accomodation__collapse .accordion__btnWrap h2,
-.accomodation__collapse .accordion__btnWrap p,
-.accomodation__collapse .accordion__btnWrap li {
-  font-size: 18px;
-  font-weight: 500;
-}
-.accomodation__collapse .collapse__content {
-  width: 100%;
-  height: auto;
-  font-size: 18px;
-  padding: 38px 12px 53px 20px;
-  overflow: auto;
-}
-
-.collapse__content li {
-  margin-bottom: 8px;
-}
-
-.collapse__content li:last-child {
-  margin-bottom: 0;
-}
-
-@media screen and (max-width: 991px) {
-  .accomodation__collapse {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .accomodation__collapse .accordion {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .accomodation__collapse .accordion__btnWrap {
-    height: 30px;
-  }
-  .accomodation__collapse .accordion__btnWrap h2 {
-    font-size: 13px;
-  }
-  .accomodation__collapse .collapse__content {
-    font-size: 12px;
-    padding: 23px 7px 4px 12px;
   }
 }/*# sourceMappingURL=index.css.map */
