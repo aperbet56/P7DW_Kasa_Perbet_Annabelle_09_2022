@@ -330,6 +330,7 @@ footer span {
 }
 /******* Style collapse page a propos *********/
 .about__collapse {
+  margin-bottom: 30px;
   max-width: 1240px;
 }
 

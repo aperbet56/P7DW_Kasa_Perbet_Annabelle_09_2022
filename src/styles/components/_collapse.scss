@@ -1,7 +1,7 @@
 /******* Style collapse page a propos *********/
 
 .about__collapse {
-  //margin-bottom: 84px;
+  margin-bottom: 30px;
   max-width: 1240px;
 }
 
@@ -50,7 +50,6 @@
 @media screen and (min-width: 1400px) {
   .about__collapse {
     max-width: none;
-    // margin-bottom: 143px;
 
     .accordion {
       max-width: none;
