@@ -45,6 +45,13 @@
 
 /******** RESPONSIVE *********/
 
+// Breakpoint écran large
+@media screen and (min-width: 1400px) {
+  .carousel__container {
+    max-width: none;
+  }
+}
+
 // Breakpoint mobile
 @media screen and (max-width: 576px) {
   .carousel__container {

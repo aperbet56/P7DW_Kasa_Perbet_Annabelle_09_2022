@@ -89,6 +89,10 @@
 
 // Breakpoint écran large
 @media screen and (min-width: 1400px) {
+  .accomodation__info {
+    max-width: none;
+  }
+
   .accomodation__info h1 {
     font-size: 36px;
     margin-top: 16px;

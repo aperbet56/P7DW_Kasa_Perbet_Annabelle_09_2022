@@ -23,6 +23,13 @@ header nav ul {
 
 /********* RESPONSIVE ***********/
 
+// Breakpoint écran large
+@media screen and (min-width: 1400px) {
+  header {
+    max-width: none;
+  }
+}
+
 // Breakpoint tablette
 @media screen and (max-width: 991px) {
   header {

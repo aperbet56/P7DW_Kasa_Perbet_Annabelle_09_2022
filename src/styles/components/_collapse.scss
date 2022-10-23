@@ -1,7 +1,7 @@
 /******* Style collapse page a propos *********/
 
 .about__collapse {
-  margin-bottom: 84px;
+  //margin-bottom: 84px;
   max-width: 1240px;
 }
 
@@ -39,12 +39,24 @@
   font-size: 24px;
   font-weight: 400;
   margin-top: -32px;
-  margin-bottom: 16px;
+  margin-bottom: 31px;
   padding: 27px 27px 19px 18px;
   border-radius: 5px;
 }
 
 /********** RESPONSIVE ***********/
+
+// Breakpoint écran large
+@media screen and (min-width: 1400px) {
+  .about__collapse {
+    max-width: none;
+    // margin-bottom: 143px;
+
+    .accordion {
+      max-width: none;
+    }
+  }
+}
 
 // Breakpoint mobile
 @media screen and (max-width: 576px) {
@@ -120,6 +132,13 @@
 }
 
 /*********** RESPONSIVE **********/
+
+// Breakpoint écran large
+@media screen and (min-width: 1400px) {
+  .accomodation__collapse {
+    max-width: none;
+  }
+}
 
 // Breakpoint tablette
 @media screen and (max-width: 991px) {

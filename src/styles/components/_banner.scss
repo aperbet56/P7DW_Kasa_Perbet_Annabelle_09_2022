@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   margin: 32px 0 64px 0;
-  max-width: 1240px; //100%
+  max-width: 1240px;
   &__img {
     max-width: 100%;
     border-radius: 25px;
@@ -19,6 +19,16 @@
 }
 
 /******** RESPONSIVE ********/
+
+// Breakpoint écran large
+@media screen and (min-width: 1400px) {
+  .banner {
+    max-width: none;
+    &__img {
+      width: 100%;
+    }
+  }
+}
 
 // Breakpoint tablette
 @media screen and (max-width: 991px) {

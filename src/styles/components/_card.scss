@@ -55,6 +55,14 @@
 
 /******** RESPONSIVE **********/
 
+// Breakpoint écran large
+@media screen and (min-width: 1400px) {
+  .accomodations {
+    max-width: none;
+    padding: 56px 50px;
+  }
+}
+
 // Breakpoint tablette
 @media screen and (max-width: 991px) {
   .accomodations {

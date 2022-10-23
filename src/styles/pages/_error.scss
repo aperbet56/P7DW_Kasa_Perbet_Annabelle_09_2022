@@ -21,11 +21,11 @@
     margin-bottom: 180px;
     color: $color-primary;
   }
+
   & .back-home__link {
     font-size: 18px;
     font-weight: 500;
     text-decoration: underline;
-    margin-bottom: 155px;
   }
 }
 
@@ -33,30 +33,34 @@
 
 // Breakpoint tablette
 @media screen and (max-width: 991px) {
-  .error404__title {
-    font-size: 200px;
-  }
-  .error404__text {
-    margin: 30px 10px 50px 10px;
+  .error404 {
+    &__title {
+      font-size: 200px;
+    }
+
+    &__text {
+      margin: 30px 10px 50px 10px;
+    }
   }
 }
 
 // Breakpoint mobile
 @media screen and (max-width: 576px) {
-  .error404__title {
-    margin-top: 25px;
-    font-size: 96px;
-    margin-bottom: 11px;
-  }
+  .error404 {
+    &__title {
+      margin-top: 25px;
+      font-size: 96px;
+      margin-bottom: 11px;
+    }
 
-  .error404__text {
-    font-size: 18px;
-    margin: 0 58px 130px 57px;
-    width: 260px;
-    height: 52px;
-    line-height: 26px;
-  }
-  .back-home__link {
-    font-size: 14px;
+    &__text {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 130px;
+    }
+
+    .back-home__link {
+      font-size: 14px;
+    }
   }
 }

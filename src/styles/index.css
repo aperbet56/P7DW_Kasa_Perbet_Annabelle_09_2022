@@ -15,6 +15,10 @@ main {
   margin: 0 80px;
 }
 
+main {
+  min-height: 76vh;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -68,6 +72,11 @@ header nav ul li .link-active {
 }
 
 /********* RESPONSIVE ***********/
+@media screen and (min-width: 1400px) {
+  header {
+    max-width: none;
+  }
+}
 @media screen and (max-width: 991px) {
   header {
     margin-right: 40px;
@@ -111,7 +120,7 @@ footer {
   align-items: center;
   width: 100%;
   height: 209px;
-  margin-top: 30px;
+  margin-top: 64px;
 }
 footer img {
   margin-top: 56px;
@@ -150,6 +159,14 @@ footer span {
 }
 
 /******** RESPONSIVE ********/
+@media screen and (min-width: 1400px) {
+  .banner {
+    max-width: none;
+  }
+  .banner__img {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 991px) {
   .banner {
     max-width: 100%;
@@ -225,6 +242,12 @@ footer span {
 }
 
 /******** RESPONSIVE **********/
+@media screen and (min-width: 1400px) {
+  .accomodations {
+    max-width: none;
+    padding: 56px 50px;
+  }
+}
 @media screen and (max-width: 991px) {
   .accomodations {
     display: block;
@@ -263,13 +286,18 @@ footer span {
   height: 100%;
   background-image: url(../../images/aboutBanner.png);
   background-position: center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(70%);
   border-radius: 25px;
 }
 
 /******** RESPONSIVE **********/
+@media screen and (min-width: 1400px) {
+  .about__banner {
+    max-width: none;
+  }
+}
 @media screen and (max-width: 991px) {
   .about__banner {
     max-width: 100%;
@@ -294,7 +322,7 @@ footer span {
     height: 100%;
     background-image: url(../../images/aboutBannerMobile.png);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(70%);
     border-radius: 10px;
@@ -302,7 +330,6 @@ footer span {
 }
 /******* Style collapse page a propos *********/
 .about__collapse {
-  margin-bottom: 84px;
   max-width: 1240px;
 }
 
@@ -338,12 +365,20 @@ footer span {
   font-size: 24px;
   font-weight: 400;
   margin-top: -32px;
-  margin-bottom: 16px;
+  margin-bottom: 31px;
   padding: 27px 27px 19px 18px;
   border-radius: 5px;
 }
 
 /********** RESPONSIVE ***********/
+@media screen and (min-width: 1400px) {
+  .about__collapse {
+    max-width: none;
+  }
+  .about__collapse .accordion {
+    max-width: none;
+  }
+}
 @media screen and (max-width: 576px) {
   .accordion {
     width: 100%;
@@ -408,6 +443,11 @@ footer span {
 }
 
 /*********** RESPONSIVE **********/
+@media screen and (min-width: 1400px) {
+  .accomodation__collapse {
+    max-width: none;
+  }
+}
 @media screen and (max-width: 991px) {
   .accomodation__collapse {
     flex-direction: column;
@@ -474,6 +514,11 @@ footer span {
 }
 
 /******** RESPONSIVE *********/
+@media screen and (min-width: 1400px) {
+  .carousel__container {
+    max-width: none;
+  }
+}
 @media screen and (max-width: 576px) {
   .carousel__container {
     height: 255px;
@@ -631,7 +676,6 @@ footer span {
   font-size: 18px;
   font-weight: 500;
   text-decoration: underline;
-  margin-bottom: 155px;
 }
 
 /********* RESPONSIVE *********/
@@ -651,12 +695,10 @@ footer span {
   }
   .error404__text {
     font-size: 18px;
-    margin: 0 58px 130px 57px;
-    width: 260px;
-    height: 52px;
     line-height: 26px;
+    margin-bottom: 130px;
   }
-  .back-home__link {
+  .error404 .back-home__link {
     font-size: 14px;
   }
 }
@@ -775,6 +817,9 @@ footer span {
 
 /******** RESPONSIVE *********/
 @media screen and (min-width: 1400px) {
+  .accomodation__info {
+    max-width: none;
+  }
   .accomodation__info h1 {
     font-size: 36px;
     margin-top: 16px;

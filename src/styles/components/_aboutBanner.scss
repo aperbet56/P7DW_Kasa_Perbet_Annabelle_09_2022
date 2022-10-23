@@ -16,7 +16,7 @@
     height: 100%;
     background-image: url(../../images/aboutBanner.png);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(70%);
     border-radius: 25px;
@@ -24,6 +24,13 @@
 }
 
 /******** RESPONSIVE **********/
+
+// Breakpoint écran large
+@media screen and (min-width: 1400px) {
+  .about__banner {
+    max-width: none;
+  }
+}
 
 // Breakpoint tablette
 @media screen and (max-width: 991px) {
@@ -53,7 +60,7 @@
       height: 100%;
       background-image: url(../../images/aboutBannerMobile.png);
       background-position: center;
-      background-repeat: none;
+      background-repeat: no-repeat;
       background-size: cover;
       filter: brightness(70%);
       border-radius: 10px;
