@@ -33,7 +33,7 @@ const Collapse = (props) => {
        */}
       {open === content ? (
         title === "Equipements" ? (
-          <ul className="collapse__content">
+          <ul className="collapse__content__ul">
             {content.map((item, index) => (
               <li key={item + index}>{item}</li>
             ))}
