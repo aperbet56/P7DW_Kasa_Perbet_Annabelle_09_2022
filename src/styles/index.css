@@ -405,7 +405,7 @@ footer span {
     font-size: 12px;
     margin-top: -20px;
     margin-bottom: 20px;
-    padding: 23px 7px 52px 11px;
+    padding: 17px 7px 52px 11px;
     line-height: 17px;
   }
 }
@@ -435,7 +435,7 @@ footer span {
   width: 100%;
   height: auto;
   font-size: 18px;
-  padding: 38px 12px 53px 20px;
+  padding: 30px 12px 53px 20px;
   overflow: auto;
   line-height: 25px;
   border-radius: 10px;
@@ -450,7 +450,7 @@ footer span {
   font-weight: 400;
   margin-top: -32px;
   margin-bottom: 31px;
-  padding: 38px 12px 27px 20px;
+  padding: 30px 12px 27px 20px;
   border-radius: 10px;
   overflow: auto;
 }
@@ -487,14 +487,14 @@ footer span {
   }
   .accomodation__collapse .collapse__content {
     font-size: 12px;
-    padding: 23px 7px 4px 12px;
+    padding: 17px 7px 4px 12px;
     line-height: 17px;
     border-radius: 5px;
   }
   .accomodation__collapse .collapse__content__ul {
     margin-top: -20px;
     font-size: 12px;
-    padding: 23px 7px 4px 12px;
+    padding: 17px 7px 4px 12px;
     border-radius: 5px;
   }
 }
@@ -583,7 +583,7 @@ footer span {
   margin-right: 16px;
   font-size: 14px;
   font-weight: 500;
-  padding: 3px 25px 2px 25px;
+  padding: 3px 22px 2px 22px;
   border-radius: 10px;
   width: auto;
 }
