@@ -46,7 +46,7 @@ const Accomodation = () => {
     return <p>Oups, il y a eu un problème.</p>;
   }
 
-  if (accomodation === undefined && !accomodation) {
+  if (accomodation === undefined) {
     return <Error />;
   }
 
