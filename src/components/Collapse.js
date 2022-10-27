@@ -11,7 +11,7 @@ const Collapse = (props) => {
 
   const toggle = (index) => {
     if (open === index) {
-      return setOpen(null);
+      return setOpen(false);
     }
     setOpen(index);
   };
